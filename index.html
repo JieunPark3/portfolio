@@ -53,33 +53,72 @@
 </header>
 <section>
     <h2>Academic Coursework</h2>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-        <div class="course-item">
-            <strong>💻 Computer Science Core</strong>
-            <p style="font-size: 0.9rem; color: #666; margin: 5px 0;">
-                자료구조, 알고리즘, 운영체제
-            </p>
+    <div class="course-container">
+        <div class="course-category">
+            <h3>🤖 AI & Data Science</h3>
+            <ul>
+                <li>머신러닝, 딥러닝 기초, 딥러닝</li>
+                <li>컴퓨터비전개론, 자연어처리</li>
+                <li>빅데이터 처리, 확률과통계, 선형대수</li>
+            </ul>
         </div>
-        <div class="course-item">
-            <strong>📊 Data & AI</strong>
-            <p style="font-size: 0.9rem; color: #666; margin: 5px 0;">
-                데이터베이스, 빅데이터분석, 머신러닝, 인공지능
-            </p>
+
+        <div class="course-category">
+            <h3>💻 System & Software</h3>
+            <ul>
+                <li>운영체제, 시스템프로그래밍, 컴퓨터구조</li>
+                <li>컴파일러구성론, 논리회로, 컴퓨터시스템입문</li>
+                <li>설계패턴, 컴퓨터그래픽스</li>
+            </ul>
         </div>
-        <div class="course-item">
-            <strong>🛠 Engineering</strong>
-            <p style="font-size: 0.9rem; color: #666; margin: 5px 0;">
-                객체지향설계
-            </p>
+
+        <div class="course-category">
+            <h3>🛠 Programming & Theory</h3>
+            <ul>
+                <li>자료구조, 알고리즘, 객체지향프로그래밍</li>
+                <li>웹프로그래밍, 프로그래밍언어론</li>
+                <li>이산수학, 공업수학 1/2, 컴퓨팅사고</li>
+            </ul>
         </div>
-        <div class="course-item">
-            <strong>🌐 Web & System</strong>
-            <p style="font-size: 0.9rem; color: #666; margin: 5px 0;">
-                웹프로그래밍,
-            </p>
+
+        <div class="course-category">
+            <h3>🚀 Practical Experience</h3>
+            <ul>
+                <li>캡스톤설계 및 실습</li>
+                <li>컴퓨터프로그래밍 및 실습</li>
+            </ul>
         </div>
     </div>
 </section>
+
+<style>
+    .course-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .course-category {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #0366d6; /* 포인트 색상 */
+    }
+    .course-category h3 {
+        font-size: 1.1rem;
+        margin-top: 0;
+        color: #0366d6;
+    }
+    .course-category ul {
+        padding-left: 20px;
+        margin-bottom: 0;
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+    /* 모바일에서는 1줄로 보이게 */
+    @media (max-width: 600px) {
+        .course-container { grid-template-columns: 1fr; }
+    }
+</style>
 
 <style>
     /* 리스트를 더 깔끔하게 보이게 하는 스타일 */
@@ -94,15 +133,15 @@
     <h2>Projects</h2>
     <a href="#" class="project-card">
         <h3>🤖 AI English Learning App</h3>
-        <p>사용자 맞춤형 AI 기반 영어 학습 서비스 (MVP 단계)</p>
-        <span class="tag">Python</span> <span class="tag">Machine Learning</span> <span class="tag">API</span>
+        <p>캡스톤 프로젝트</p>
+        <span class="tag">Python</span>  <span class="tag">API</span>
     </a>
 </section>
 
 <section>
     <h2>Experience & Skills</h2>
     <ul>
-        <li><strong>Tech Stack:</strong> C, SQL, HTML/CSS, Linux</li>
+        <li><strong>Tech Stack:</strong> Python, C++, C, SQL, HTML/CSS, JavaScript,JAVA </li>
         <li><strong>Certifications:</strong> SQLD (SQL Developer)</li>
         <li><strong>Education:</strong> Hankuk University of Foreign Studies (4th Year)</li>
     </ul>
